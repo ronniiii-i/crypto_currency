@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+    font-size: 62.5%;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oxanium', cursive;
+    transition: all .3s;
+    color: white;
+}
+body{
+    background-color: #0D0D2B;
+    font-size: 1.6rem;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 4rem;
+}
+button{
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+nav{
+    color: white;
+    padding: 2.5rem 6rem;
+}
+.nav--links ul li{
+    display: inline-block;
+}
+.nav--links ul li:hover a{
+    border-bottom: 1px solid #3b82f6;
+    margin-bottom: -5px;
+    padding-bottom: 5px;
+}
+.nav--links ul,
+.buttons,
+.nav--links li,
+.buttons a{
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+.buttons span{
+    color: #ffffff33;
+    padding: 0 1rem;
+}
+.buttons a:nth-child(3){
+    border-radius: 100px;
+    background-color: #3b82f6;
+    padding: 1rem 1.5rem;
+}
+.hero{
+    padding: 1rem 5rem;
+}
+.rounded-div{
+    border-radius: 100px;
+    background-color: #ffffff33;
+    overflow: hidden;
+    width: 70%;
+}
+.rounded-div span{
+    padding: 0 1rem;
+}
+.rounded-div span:nth-child(1){
+    border-radius: 100px;
+    background-color: #ffffff;
+    color: #0D0D2B;
+}

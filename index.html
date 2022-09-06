@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/img/" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>CRAPPO Crypto Currency Landing Page</title>
 </head>
 <body>
-    <nav>
-        <div class="site--logo"></div>
-        <div class="nav--links"></div>
+    <nav class="flex justify-between">
+        <div class="site--logo">
+            <img src="assets/img/logo.svg" alt="CRAPPO">
+        </div>
+        <div class="nav--links flex">
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="buttons">
+                <a href="#">Login</a>
+                <span>|</span>
+                <a href="#">Register</a>
+            </div>
+        </div>
     </nav>
     <main>
-        <section class="hero flex">
+        <section class="hero flex justify-between">
             <div class="hero--text">
-                <div class="rounded-div">
+                <div class="rounded-div flex justify-between">
                     <span>70% SAVE</span>
                     <span>for the best black friday deals</span>
                 </div>
@@ -34,7 +49,9 @@
                         
                 </button>
             </div>
-            <div class="hero--image"></div>
+            <div class="hero--image">
+                <img src="assets/img/hero-img.png" alt="hero image">
+            </div>
         </section>
         <section class="features">
             <div class="flex--container flex">
@@ -98,22 +115,24 @@
             <p>
                 Let’s check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <div class="calculate calculate-input flex">
-                <input type="text" placeholder="enter your hash rate">
-                <select>
-                    <option value="TH/s">TH/s</option>
-                    <option value="TH/s">H/s</option>
-                    <option value="TH/s">KH/s</option>
-                    <option value="TH/s">MH/s</option>
-                    <option value="TH/s">GH/s</option>
-                </select>
-                <button>Calculate</button>
+            <div class="calculate calculate-input">
+                <div class="flex">
+                    <input type="text" placeholder="enter your hash rate">
+                    <select>
+                        <option value="TH/s">TH/s</option>
+                        <option value="TH/s">H/s</option>
+                        <option value="TH/s">KH/s</option>
+                        <option value="TH/s">MH/s</option>
+                        <option value="TH/s">GH/s</option>
+                    </select>
+                    <button>Calculate</button>
+                </div>
+                <p>ESTIMATED 24 HOUR REVENUE:</p>
+                <h2>0.055 130 59 ETH <span class="blue">($1275)</span></h2>
             </div>
         </section>
         <section>
             <div class="calculate calculate-output">
-                <p>ESTIMATED 24 HOUR REVENUE:</p>
-                <h2>0.055 130 59 ETH <span class="blue">($1275)</span></h2>
                 <p>Revenue will change based on mining difficulty and Ethereum price.</p>
             </div>
             <h2>Trade securely and market the high growth cryptocurrencies.</h2>
@@ -166,7 +185,99 @@
                 </div>
             </div>
         </section>
+        <section class="features-2">
+            <h2>Market Sentiments, Portfolio, And Run The Infrastructure Of Your Choice</h2>
+            <div class="flex">
+                <div class="text">
+                    <h1>Invest Smart</h1>
+                    <p>
+                        Get full statistic information about the behaviour of buyers and sellers will help you to make the decision. 
+                    </p>
+                    <button>learn more</button>
+                </div>
+                <div class="image">
+                    <img src="assets/img/feature-1-img.png" alt="">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="image">
+                    <img src="assets/img/feature-2-img.png" alt="Detailed Statistics">
+                </div>
+                <div class="text">
+                    <h1>Detailed Statistics</h1>
+                    <p>
+                        View all mining related information in realtime, at any point at any location and decide which polls you want to mine in.
+                    </p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="text">
+                    <h1>Grow Your Profit And Track Your Investments</h1>
+                    <p>
+                        Use advanced analytical tools. Clear TradingView charts let you track current and historical profit investments.
+                    </p>
+                    <button>learn more</button>
+                </div>
+                <div class="image">
+                    <img src="assets/img/feature-3-img.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="inner">
+                <div class="inner-text">
+                    <h1>Start mining now</h1>
+                    <p>Join now with CRAPPO to get the latest news and start mining now</p>
+                </div>
+                <div class="inner-suscribe">
+                    <input type="text" placeholder="Enter your email">
+                    <button>Suscribe</button>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="site_details flex">
+            <div class="logo"></div>
+            <div class="quick_links">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Download Whitepapper</a></li>
+                    <li><a href="#">Smart Token</a></li>
+                    <li><a href="#">Blockchain Explorer</a></li>
+                    <li><a href="#">Crypto API</a></li>
+                    <li><a href="#">Interest</a></li>
+                </ul>
+            </div>
+            <div class="payment_details">
+                <h3>We accept following payment systems</h3>
+                <div class="flex cards">
+                    <img src="assets/img/visa.png" alt="visa">
+                    <img src="assets/img/mastercard.png" alt="mastercard">
+                    <img src="assets/img/bitcoin.png" alt="bitcoin">                        
+                </div>
+            </div>
+        </section>
+        <section class="socials_n_copyright">
+            <p>©2021 CRAPPO. All rights reserved</p>
+            <div class="icons flex">
+                <i>facebook</i>
+                <i>instagram</i>
+                <i>youtube</i>
+                <i>twitter</i>
+                <i>linkedin</i>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
