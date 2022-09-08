@@ -14,15 +14,31 @@ body{
     background-color: #0D0D2B;
     font-size: 1.6rem;
 }
+section{
+    width: 100%;
+}
 a{
     text-decoration: none;
 }
+p{
+    font-size: 1.6rem;
+}
 h1{
-    font-size: 4rem;
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 1;
 }
 button{
     background-color: #3b82f6;
     color: #ffffff;
+    border: none;
+    padding: .4rem 1.6rem;
+    border-radius: 100px;
+    gap: 1rem;
+}
+small{
+    font-size: 1.2rem;
+    height: 1.7rem;
 }
 .flex{
     display: flex;
@@ -33,6 +49,9 @@ button{
 }
 .justify-center{
     justify-content: center;
+}
+.grey{
+    color: #9ca3af;
 }
 nav{
     color: white;
@@ -65,17 +84,55 @@ nav{
 .hero{
     padding: 1rem 5rem;
 }
+.hero--text{
+    width: 40%;
+}
+.hero--text *{
+    margin-block: 1.5rem;
+}
 .rounded-div{
     border-radius: 100px;
     background-color: #ffffff33;
     overflow: hidden;
-    width: 70%;
+    width: 65%;
+    padding: .4rem;
 }
-.rounded-div span{
-    padding: 0 1rem;
+.rounded-div *, button svg{
+    margin: 0 !important;
 }
-.rounded-div span:nth-child(1){
+.rounded-div small{
+    padding: .3rem 1rem;
+}
+.rounded-div small:nth-child(1){
     border-radius: 100px;
     background-color: #ffffff;
     color: #0D0D2B;
+}
+.hero--image img{
+    width: 75%;
+}
+.features{
+    padding: 8rem 5rem 1.6rem;
+}
+.features h1{
+    font-size: 2.4rem;
+}
+.why_us{
+    padding: 4rem 5rem 1.6rem;
+}
+.why_us div{
+    width: 48%;
+}
+.flex-card{
+    width: 20%;
+    gap: 2rem;
+}
+.why--image img{
+    width: 100%;
+}
+.why--text *{
+    margin-block: 2rem;
+}
+.why_us h1{
+    font-weight: 400;
 }
