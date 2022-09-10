@@ -196,7 +196,8 @@ nav{
     color: #0D0D2B;
     margin-bottom: 2rem;
 }
-.calculate input{
+.calculate input,
+.cta input{
     width: 50%;
     line-height: 2.8rem;
     border: none;
@@ -300,9 +301,6 @@ select, option{
 }
 .cta{
     padding: 5.6rem 0;
-    /* background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%); */
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.77%, rgba(255, 255, 255, 0.3) 186.22%); */
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%); */
 }
 .cta .inner{
     background-color: #3671E9;
@@ -310,9 +308,75 @@ select, option{
     border-radius: 16px;
     width: 90%;
     margin: auto;
-    padding: 2.4rem 4rem;
+    padding: 3rem 4rem;
 }
 .cta h1{
     font-size: 2.4rem;
     margin-bottom: 2rem;
+}
+.cta .inner div{
+    width: 50%;
+    margin-block: 3rem; 
+}
+.cta input{
+    background-color: transparent;
+    color: #ffffff;
+    width: 75%;
+}
+.cta input::placeholder{
+    color: #ffffff;
+}
+.cta button{
+    padding: .8rem 1.6rem;
+    font-size: 1.6rem;
+    background-color: #ffffff;
+    color: #3671e9;
+}
+.site_details{
+    padding: 4rem;
+}
+.site_details div{
+    padding: 1rem;
+}
+.site_details .logo{
+    width: 20%;
+    justify-content: flex-start;
+    align-self: flex-start;
+    align-items: flex-start;
+}
+.site_details .quick_links,
+.site_details .resources{
+    width: fit-content;
+}
+ul{
+    list-style: none;
+}
+.site_details h3{
+    margin-bottom: 2rem;
+}
+.site_details li{
+    padding-block: 1rem;
+}
+.site_details li a:hover{
+    color: #3671E9;
+}
+.payment_details{
+    align-self: flex-start;
+    width: 30%;
+}
+.payment_details h3{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.site_details .cards{
+    width: 100%;
+}
+.socials_n_copyright{
+    padding: 4.8rem 5rem;
+}
+.socials_n_copyright .icons{
+    width: 30%;
+}
+.socials_n_copyright .icons img{
+    fill: white;
 }
