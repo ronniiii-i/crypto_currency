@@ -6,7 +6,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Oxanium', sans-serif;
+    font-family: 'Oxanium', cursive;
     color: white;
 }
 body{
@@ -538,5 +538,8 @@ ul{
     nav, section{
         padding-left: 2rem !important;
         padding-right: 2rem !important;
+    }
+    .rounded-div{
+        width: 100%;
     }
 }
