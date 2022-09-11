@@ -6,7 +6,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Oxanium', cursive;
+    font-family: 'Oxanium', sans-serif;
     color: white;
 }
 body{
@@ -36,6 +36,10 @@ button{
     border-radius: 100px;
     gap: 1rem;
     transition: all .3s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #2766e6;
 }
 small{
     font-size: 1.2rem;
@@ -111,6 +115,55 @@ nav{
     background-color: #3b82f6;
     padding: 1rem 1.5rem;
 }
+.burger{
+    width: 20px;
+    height: 15px;
+    z-index: 6;
+    display: none;
+    cursor: pointer;
+}
+.fixed{
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+}
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.rot1{
+    transform: rotate(405deg) translate(4px,5px);
+}
+.disappear{
+    opacity: 0;
+}
+.rot2{
+    transform: rotate(-405deg) translate(4px,-5px);
+}
+.nav--links2{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    background-color: #252540;
+    text-align: center;
+    font-size: 2.4rem;
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* display: none; */
+}
+.nav--links2.toggle{
+    left: 0;
+    right: 0;
+}
+.nav--links2 li{
+    margin-block: 2rem;
+}
+.nav--links2 .buttons a{
+    font-size: 2.4rem;
+}
 .hero{
     padding: 1rem 5rem;
     background-image: url(../img/hero-bg.png);
@@ -169,7 +222,7 @@ nav{
     font-weight: 400;
 }
 .check{
-    padding: 5.6rem 0 0rem;
+    padding: 5.6rem 5rem 0rem;
 }
 .check h2:nth-child(1), .check p:nth-child(2){
     text-align: center;
@@ -234,6 +287,7 @@ select, option{
     border-radius: 20px;
     padding: 4.8rem 2.4rem;
     width: 30%;
+    transition: all .5s;
 }
 .currencies .flex-card *{
     color: #000000 !important;
@@ -251,6 +305,7 @@ select, option{
 .currencies button{
     font-size: 1.8rem;
     padding: 1.2rem 2.4rem;
+    transition: all .5s;
 }
 .currencies button span{
     color: #f9fafb;
@@ -260,9 +315,22 @@ select, option{
     border-radius: 100px;
     border: 3px solid #9ca3af;
     padding: 1.2rem;
+    transition: all .5s;
 }
 .card_click .toggle-text{
-    display: none;
+    position: absolute;
+    margin-right: -50%;
+    z-index: -2;
+    opacity: 0;
+    transition: all .5s;
+}
+.card_click .toggle-text.show{
+    display: block;
+    position: relative;
+    margin: 0%;
+    width: fit-content;
+    z-index: 1;
+    opacity: 1;
 }
 .currencies .flex--container .flex-card.bgviolet{
     background-color: #2b076e !important;
@@ -369,6 +437,9 @@ ul{
     font-size: 1.6rem;
     font-weight: 400;
 }
+.payment_details img{
+    width: 30%;
+}
 .site_details .cards{
     width: 100%;
 }
@@ -380,4 +451,92 @@ ul{
 }
 .socials_n_copyright .icons img{
     fill: white;
+}
+@media screen and (max-width: 1023px) {
+    .burger{
+        display: flex;
+    }
+    .nav--links{
+        display: none;
+    }
+    main section,
+    footer section,
+    .flex--container,
+    .calculate .flex,
+    .cta .flex{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    main section,
+    footer section,
+    .flex--container,
+    .calculate .flex{
+        gap: 3rem;
+    }
+    section{
+        max-width: 72rem;
+        margin: auto;
+    }
+    section > div,
+    .flex--container > div{
+        width: 100% !important;
+        /* padding-bottom: 2rem; */
+    }
+    .features .flex--container > div{
+        width: 24rem !important;
+    }
+    .features svg{
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+    .currencies{
+        min-width: 100%;
+    }
+    .hero h1,
+    .why_us h1{
+        font-size: 3.6rem;
+    }
+    .hero--image{
+        text-align: center;
+    }
+    .features-2 h2{
+        width: 100%;
+    }
+    .cta .inner div{
+        width: 100%;
+        margin-block: 1rem; 
+    }
+    .cta input{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+    }
+    footer section{
+        padding: 2rem 4rem !important;
+    }
+    .site_details .logo{
+        align-items: center;
+    }
+    .site_details .cards{
+        width: fit-content;
+        margin: auto;
+    }
+    .payment_details img{
+        max-width: 10rem;
+    }
+    .calculate .flex{
+        align-items: flex-start;
+    }
+    .calculate input, select{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 550px) {
+    nav, section{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
 }
