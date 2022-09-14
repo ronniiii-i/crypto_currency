@@ -290,6 +290,7 @@ select, option{
     padding: 20rem 5rem 5rem;
 }
 .currencies h2{
+    margin: auto;
     margin-bottom: 3rem;
     color: #000000;
 }
@@ -393,6 +394,9 @@ select, option{
     width: 90%;
     margin: auto;
     padding: 3rem 4rem;
+}
+.cta .inner * {
+    width: 100%;
 }
 .cta h1{
     font-size: 2.4rem;

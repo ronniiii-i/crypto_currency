@@ -25,7 +25,7 @@ function trans() {
             trigger: '.fCard1',
             toggleActions: "restart pause complete pause"
         },
-        marginBottom: '-50%',
+        marginBottom: '-5%',
         opacity: 0,
         duration: 2
     });
@@ -34,7 +34,7 @@ function trans() {
             trigger: '.fCard2',
             toggleActions: "restart pause complete pause"
         },
-        marginBottom: '-50%',
+        marginBottom: '-10%',
         opacity: 0,
         duration: 2
     });
@@ -43,7 +43,7 @@ function trans() {
             trigger: '.fCard3',
             toggleActions: "restart pause complete pause"
         },
-        marginBottom: '-50%',
+        marginBottom: '-15%',
         opacity: 0,
         duration: 2
     });
@@ -61,7 +61,7 @@ function trans() {
             toggleActions: "restart pause complete pause"
         },
         // marginTop: '1000%',
-        marginBottom: '100%',
+        marginBottom: '50%',
         opacity: 0,
         duration: 2
     });
@@ -82,7 +82,93 @@ function trans() {
         height: '1vh',
         fontSize: '.1rem',
         width: '1vw',
-        alignItems: 'center',
+        duration: 2.5
+    });
+    gsap.from(".cuOut", {
+        scrollTrigger: {
+            trigger: '.cuOut',
+            toggleActions: "restart pause complete pause"
+        },
+        width: '10%',
+        fontSize: '.1rem',
+        duration: 2.5
+    });
+    gsap.from(".fOut", {
+        scrollTrigger: {
+            trigger: '.fOut',
+            toggleActions: "restart pause complete pause"
+        },
+        width: '10%',
+        fontSize: '.1rem',
+        duration: 2.5
+    });
+    gsap.from(".fText", {
+        scrollTrigger: {
+            trigger: '.fText',
+            toggleActions: "restart pause complete pause"
+        },
+        marginBottom: '-10vw',
+        opacity: 0,
+        duration: 2
+    });
+    gsap.from(".fText1", {
+        scrollTrigger: {
+            trigger: '.fText1',
+            toggleActions: "restart pause complete pause"
+        },
+        marginBottom: '-10vw',
+        opacity: 0,
+        duration: 2
+    });
+    gsap.from(".fText2", {
+        scrollTrigger: {
+            trigger: '.fText2',
+            toggleActions: "restart pause complete pause"
+        },
+        marginBottom: '-10vw',
+        opacity: 0,
+        duration: 2
+    });
+    gsap.from(".fImage *", {
+        scrollTrigger: {
+            trigger: '.fImage',
+            toggleActions: "restart pause complete pause"
+        },
+        width: '10%',
+        duration: 2.5
+    });
+    gsap.from(".fImage1 *", {
+        scrollTrigger: {
+            trigger: '.fImage1',
+            toggleActions: "restart pause complete pause"
+        },
+        width: '10%',
+        duration: 2.5
+    });
+    gsap.from(".fImage2 *", {
+        scrollTrigger: {
+            trigger: '.fImage2',
+            toggleActions: "restart pause complete pause"
+        },
+        width: '10%',
+        duration: 2.5
+    });
+    gsap.from(".ctOut", {
+        scrollTrigger: {
+            trigger: '.ctOut',
+            toggleActions: "restart pause complete pause"
+        },
+        width: '10%',
+        duration: 2
+    });
+    gsap.from(".ctOut *", {
+        scrollTrigger: {
+            trigger: '.ctOut',
+            toggleActions: "restart pause complete pause"
+        },
+        height: '10%',
+        fontSize: '.1rem',
+        width: '10%',
         duration: 2.5
     });
 }
