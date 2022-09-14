@@ -60,7 +60,7 @@ function trans() {
             trigger: '.why--text',
             toggleActions: "restart pause complete pause"
         },
-        marginTop: '1000%',
+        // marginTop: '1000%',
         marginBottom: '10%',
         opacity: 0,
         duration: 2
