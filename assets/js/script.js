@@ -30,7 +30,7 @@ for (let i = 0; i < currencies.length; i++) {
     })
 }
 
-window.addEventListener('resize',() => {
-    window.location.reload();
-    console.log('fxfjc');
-})
+// window.addEventListener('resize',() => {
+//     window.location.reload();
+//     console.log('fxfjc');
+// })
