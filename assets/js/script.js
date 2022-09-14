@@ -29,3 +29,8 @@ for (let i = 0; i < currencies.length; i++) {
         currButton[i].classList.add("show");
     })
 }
+
+window.addEventListener('resize',() => {
+    window.location.reload();
+    console.log('fxfjc');
+})

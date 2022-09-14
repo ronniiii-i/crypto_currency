@@ -380,6 +380,7 @@ select, option{
 }
 .features-2 .image{
     width: 50%;
+    text-align: center;
 }
 .features-2 .image img{
     width: 100%;

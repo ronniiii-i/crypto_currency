@@ -90,7 +90,8 @@ function trans() {
             toggleActions: "restart pause complete pause"
         },
         height: '1vh',
-        fontSize: '.1rem',
+        fontSize: '1rem',
+        opacity: 0,
         width: '1vw',
         duration: 2.5
     });
@@ -100,7 +101,8 @@ function trans() {
             toggleActions: "restart pause complete pause"
         },
         width: '10%',
-        fontSize: '.1rem',
+        fontSize: '1rem',
+        opacity: 0,
         duration: 2.5
     });
     gsap.from(".fOut", {
@@ -109,7 +111,8 @@ function trans() {
             toggleActions: "restart pause complete pause"
         },
         width: '10%',
-        fontSize: '.1rem',
+        fontSize: '1rem',
+        opacity: 0,
         marginBottom: '10%',
         duration: 2.5
     });
@@ -188,8 +191,9 @@ function trans() {
             toggleActions: "restart pause complete pause"
         },
         height: '10%',
-        fontSize: '.1rem',
+        fontSize: '1rem',
         width: '10%',
+        opacity: 0,
         margin: 'auto',
         duration: 2.5
     });
