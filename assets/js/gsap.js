@@ -61,7 +61,7 @@ function trans() {
             toggleActions: "restart pause complete pause"
         },
         // marginTop: '1000%',
-        marginBottom: '5%',
+        marginBottom: '10%',
         opacity: 0,
         duration: 2
     });
