@@ -168,6 +168,7 @@ nav{
     padding: 1rem 5rem;
     background-image: url(../img/hero-bg.png);
     background-size: contain;
+    min-height: 47rem;
 }
 .hero--text{
     width: 40%;
@@ -192,6 +193,9 @@ nav{
     border-radius: 100px;
     background-color: #ffffff;
     color: #0D0D2B;
+}
+.hero--image{
+    text-align: center;
 }
 .hero--image img{
     width: 75%;
@@ -223,6 +227,7 @@ nav{
 }
 .check{
     padding: 5.6rem 5rem 0rem;
+    min-height: 37rem;
 }
 .check h2:nth-child(1), .check p:nth-child(2){
     text-align: center;
@@ -249,6 +254,9 @@ nav{
     font-size: 3.2rem;
     color: #0D0D2B;
     margin-bottom: 2rem;
+}
+.calculate h2 span{
+    color: #3671E9;
 }
 .calculate input,
 .cta input{

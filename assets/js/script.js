@@ -7,6 +7,8 @@ const nav2 = document.querySelector('.nav--links2');
 const currencies = document.querySelectorAll('.currencies .flex--container .flex-card');
 const currButton = document.querySelectorAll('.card_click .toggle-text');
 
+
+
 burger.addEventListener('click', () => {
     burger.classList.toggle('fixed');
     line1.classList.toggle('rot1');
