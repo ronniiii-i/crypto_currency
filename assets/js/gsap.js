@@ -65,6 +65,26 @@ function trans() {
         opacity: 0,
         duration: 2
     });
+    gsap.from(".cRise", {
+        scrollTrigger: {
+            trigger: '.cRise',
+            toggleActions: "restart pause complete pause"
+        },
+        marginBottom: '5vw',
+        opacity: 0,
+        duration: 2
+    });
+    gsap.from(".cOut *", {
+        scrollTrigger: {
+            trigger: '.cOut',
+            toggleActions: "restart pause complete pause"
+        },
+        height: '1vh',
+        fontSize: '.1rem',
+        width: '1vw',
+        alignItems: 'center',
+        duration: 2.5
+    });
 }
 // gsap.from(".hero--image", {
 //     scrollTrigger: {
